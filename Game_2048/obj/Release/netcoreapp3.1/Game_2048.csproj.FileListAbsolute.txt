@@ -1,0 +1,12 @@
+/Users/kremenevskki/Desktop/cSharp/Game_2048/bin/Release/netcoreapp3.1/Game_2048.deps.json
+/Users/kremenevskki/Desktop/cSharp/Game_2048/bin/Release/netcoreapp3.1/Game_2048.runtimeconfig.json
+/Users/kremenevskki/Desktop/cSharp/Game_2048/bin/Release/netcoreapp3.1/Game_2048.runtimeconfig.dev.json
+/Users/kremenevskki/Desktop/cSharp/Game_2048/bin/Release/netcoreapp3.1/Game_2048.dll
+/Users/kremenevskki/Desktop/cSharp/Game_2048/bin/Release/netcoreapp3.1/Game_2048.pdb
+/Users/kremenevskki/Desktop/cSharp/Game_2048/obj/Release/netcoreapp3.1/Game_2048.csprojAssemblyReference.cache
+/Users/kremenevskki/Desktop/cSharp/Game_2048/obj/Release/netcoreapp3.1/Game_2048.csproj.CoreCompileInputs.cache
+/Users/kremenevskki/Desktop/cSharp/Game_2048/obj/Release/netcoreapp3.1/Game_2048.AssemblyInfoInputs.cache
+/Users/kremenevskki/Desktop/cSharp/Game_2048/obj/Release/netcoreapp3.1/Game_2048.AssemblyInfo.cs
+/Users/kremenevskki/Desktop/cSharp/Game_2048/obj/Release/netcoreapp3.1/Game_2048.dll
+/Users/kremenevskki/Desktop/cSharp/Game_2048/obj/Release/netcoreapp3.1/Game_2048.pdb
+/Users/kremenevskki/Desktop/cSharp/Game_2048/obj/Release/netcoreapp3.1/Game_2048.genruntimeconfig.cache
