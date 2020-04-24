@@ -7,23 +7,30 @@ namespace Game_2048
     {
         private const int Size = 4;
         private int [,] _board = new int[Size, Size];
-        private int score = 0;
+        private int _score = 0;
         
         
-        public void NewGame()
+        private void NewGame()
         {
             for (int i = 0; i < Size; ++i)
                 for (int j = 0; j < Size; ++j)
                     _board[i, j] = 0;
-
-            generatePiece();
+            
+            _score = 0;
+            
+            GeneratePiece();
         }
 
 
-        private void generatePiece()
+        private void GeneratePiece()
         {
-            Tuple<int, int> pos = generateUnoccupiedPosition();
-            _board[pos.Item1, pos.Item2] = 2;
+            Tuple<int, int> pos = GenerateUnoccupiedPosition();
+            Random randomFour = new Random();
+            int numFour = randomFour.Next(9);
+            if (numFour == 4)
+                _board[pos.Item1, pos.Item2] = 4;
+            else
+                _board[pos.Item1, pos.Item2] = 2;
         }
 
 
@@ -36,35 +43,32 @@ namespace Game_2048
                         Console.Write(".".PadLeft(8));
                     else
                         Console.Write(_board[i, j].ToString().PadLeft(8));
-                Console.Write("\n");
+                Console.Write("\n\n");
             }
             
-            Console.WriteLine($"\nScore: {score}");
-            
-            Console.WriteLine("\nPress - N: for Start New game\nPress - Q: for Quit\n");
+            Console.WriteLine($"Score: {_score}\n");
+            Console.WriteLine("Press - N: for Start New game\nPress - Q: for Quit\n");
         }
 
 
-        private Tuple<int, int> generateUnoccupiedPosition()
+        private Tuple<int, int> GenerateUnoccupiedPosition()
         {
-            int occupied = 1;
-            Random random1 = new Random();
-            Random random2 = new Random();
+            Random random = new Random();
             int line;
             int column;
             
             while (true)
             {
-                line = random1.Next() % 4;
-                column = random2.Next() % 4;
+                line = random.Next() % 4;
+                column = random.Next() % 4;
                 if (_board[line, column] == 0)
                     break;
             }
         
             return new Tuple<int, int>(line, column);
         }
-
-
+        
+        
         private bool MoveIsPossible(int line, int column, int nextLine, int nextColumn)
         {
             if (nextLine < 0 || nextColumn < 0 ||  nextLine >= 4 || nextColumn >= 4 ||
@@ -78,7 +82,7 @@ namespace Game_2048
         private void ApplyMove(ConsoleKeyInfo direction)
         {
             // convert key to int
-            int conv_temp = 0;
+            int convTemp = 0;
             int startLine = 0, startColumn = 0, lineStep = 1, columnStep = 1;
 
             int[] dirLine = new int[4] {1, 0, -1, 0};
@@ -86,27 +90,28 @@ namespace Game_2048
 
             if (direction.Key == ConsoleKey.UpArrow)
             {
-                conv_temp = 2;
+                convTemp = 2;
             }
             else if (direction.Key == ConsoleKey.DownArrow)
             {
-                conv_temp = 0;
+                convTemp = 0;
                 startLine = 3;
                 lineStep = -1;
             }
             else if (direction.Key == ConsoleKey.LeftArrow)
             {
-                conv_temp = 3;
+                convTemp = 3;
             }
             else if (direction.Key == ConsoleKey.RightArrow)
             {
-                conv_temp = 1;
+                convTemp = 1;
                 startColumn = 3;
                 columnStep = -1;
             }
 
-            bool moveIsPos = false, canAddPiece = false;
+            bool moveIsPos, canAddPiece = false;
             int scoreTemp = 0;
+            
             do
             {
                 moveIsPos = false;
@@ -114,14 +119,15 @@ namespace Game_2048
                 {
                     for (int j = startColumn; j >= 0 && j < 4; j += columnStep)
                     {
-                        int nextI = i + dirLine[conv_temp];
-                        int nextJ = j + dirColumn[conv_temp];
+                        int nextI = i + dirLine[convTemp];
+                        int nextJ = j + dirColumn[convTemp];
                         if (_board[i, j] > 0 && MoveIsPossible(i, j, nextI, nextJ))
                         {
                             if (_board[i, j] == _board[nextI, nextJ])
                             {
                                 scoreTemp += _board[i, j] * 2;
                             }
+                            
                             _board[nextI, nextJ] += _board[i, j];
                             _board[i, j] = 0;
                             moveIsPos = canAddPiece = true;
@@ -133,8 +139,8 @@ namespace Game_2048
 
             if (canAddPiece)
             {
-                generatePiece();
-                score += scoreTemp;
+                GeneratePiece();
+                _score += scoreTemp;
             }
 
         }
@@ -148,17 +154,17 @@ namespace Game_2048
             {
                 Console.Clear();
                 PrintUi();
+                
                 ConsoleKeyInfo command =  Console.ReadKey();
             
                 if (command.Key == ConsoleKey.N)
                     NewGame();
-                else if (command.Key == ConsoleKey.Q)
-                 break;
-                else
-                {
-                    ApplyMove(command);
-                }
                 
+                else if (command.Key == ConsoleKey.Q)
+                    break;
+                
+                else
+                    ApplyMove(command);
             }
         }
     }
