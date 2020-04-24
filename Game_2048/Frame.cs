@@ -142,6 +142,7 @@ namespace Game_2048
                 GeneratePiece();
                 _score += scoreTemp;
             }
+            
 
         }
         
@@ -162,7 +163,7 @@ namespace Game_2048
                 
                 else if (command.Key == ConsoleKey.Q)
                     break;
-                
+
                 else
                     ApplyMove(command);
             }
