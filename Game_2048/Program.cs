@@ -6,7 +6,8 @@ namespace Game_2048
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Frame game = new Frame();
+            game.Start();
         }
     }
 }
