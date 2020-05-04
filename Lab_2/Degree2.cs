@@ -84,7 +84,7 @@ namespace Lab_2
         public static int DegreeBigInt(ulong a, ulong b)
         {
             
-            BigInteger bigInteger = new BigInteger(a);
+            var bigInteger = new System.Numerics.BigInteger(a);
             while (a <= b)
             {
                 a++;
