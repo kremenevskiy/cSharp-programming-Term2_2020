@@ -1,0 +1,12 @@
+/Users/kremenevskiy/Desktop/cSharp/Lab3/bin/Debug/netcoreapp3.1/Lab3.deps.json
+/Users/kremenevskiy/Desktop/cSharp/Lab3/bin/Debug/netcoreapp3.1/Lab3.runtimeconfig.json
+/Users/kremenevskiy/Desktop/cSharp/Lab3/bin/Debug/netcoreapp3.1/Lab3.runtimeconfig.dev.json
+/Users/kremenevskiy/Desktop/cSharp/Lab3/bin/Debug/netcoreapp3.1/Lab3.dll
+/Users/kremenevskiy/Desktop/cSharp/Lab3/bin/Debug/netcoreapp3.1/Lab3.pdb
+/Users/kremenevskiy/Desktop/cSharp/Lab3/obj/Debug/netcoreapp3.1/Lab3.csprojAssemblyReference.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab3/obj/Debug/netcoreapp3.1/Lab3.csproj.CoreCompileInputs.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab3/obj/Debug/netcoreapp3.1/Lab3.AssemblyInfoInputs.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab3/obj/Debug/netcoreapp3.1/Lab3.AssemblyInfo.cs
+/Users/kremenevskiy/Desktop/cSharp/Lab3/obj/Debug/netcoreapp3.1/Lab3.dll
+/Users/kremenevskiy/Desktop/cSharp/Lab3/obj/Debug/netcoreapp3.1/Lab3.pdb
+/Users/kremenevskiy/Desktop/cSharp/Lab3/obj/Debug/netcoreapp3.1/Lab3.genruntimeconfig.cache
