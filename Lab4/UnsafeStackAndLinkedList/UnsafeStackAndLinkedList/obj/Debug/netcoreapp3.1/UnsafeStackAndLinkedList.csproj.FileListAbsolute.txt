@@ -1,0 +1,9 @@
+/Users/kremenevskiy/Desktop/cSharp/Lab4/UnsafeStackAndLinkedList/UnsafeStackAndLinkedList/bin/Debug/netcoreapp3.1/UnsafeStackAndLinkedList.deps.json
+/Users/kremenevskiy/Desktop/cSharp/Lab4/UnsafeStackAndLinkedList/UnsafeStackAndLinkedList/bin/Debug/netcoreapp3.1/UnsafeStackAndLinkedList.dll
+/Users/kremenevskiy/Desktop/cSharp/Lab4/UnsafeStackAndLinkedList/UnsafeStackAndLinkedList/bin/Debug/netcoreapp3.1/UnsafeStackAndLinkedList.pdb
+/Users/kremenevskiy/Desktop/cSharp/Lab4/UnsafeStackAndLinkedList/UnsafeStackAndLinkedList/obj/Debug/netcoreapp3.1/UnsafeStackAndLinkedList.csprojAssemblyReference.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab4/UnsafeStackAndLinkedList/UnsafeStackAndLinkedList/obj/Debug/netcoreapp3.1/UnsafeStackAndLinkedList.csproj.CoreCompileInputs.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab4/UnsafeStackAndLinkedList/UnsafeStackAndLinkedList/obj/Debug/netcoreapp3.1/UnsafeStackAndLinkedList.AssemblyInfoInputs.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab4/UnsafeStackAndLinkedList/UnsafeStackAndLinkedList/obj/Debug/netcoreapp3.1/UnsafeStackAndLinkedList.AssemblyInfo.cs
+/Users/kremenevskiy/Desktop/cSharp/Lab4/UnsafeStackAndLinkedList/UnsafeStackAndLinkedList/obj/Debug/netcoreapp3.1/UnsafeStackAndLinkedList.dll
+/Users/kremenevskiy/Desktop/cSharp/Lab4/UnsafeStackAndLinkedList/UnsafeStackAndLinkedList/obj/Debug/netcoreapp3.1/UnsafeStackAndLinkedList.pdb
