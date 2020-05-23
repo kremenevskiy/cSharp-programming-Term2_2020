@@ -1,0 +1,13 @@
+/Users/kremenevskiy/Desktop/cSharp/Lab4/Task2/Task2/bin/Debug/netcoreapp3.1/Task2.deps.json
+/Users/kremenevskiy/Desktop/cSharp/Lab4/Task2/Task2/bin/Debug/netcoreapp3.1/Task2.runtimeconfig.json
+/Users/kremenevskiy/Desktop/cSharp/Lab4/Task2/Task2/bin/Debug/netcoreapp3.1/Task2.runtimeconfig.dev.json
+/Users/kremenevskiy/Desktop/cSharp/Lab4/Task2/Task2/bin/Debug/netcoreapp3.1/Task2.dll
+/Users/kremenevskiy/Desktop/cSharp/Lab4/Task2/Task2/bin/Debug/netcoreapp3.1/Task2.pdb
+/Users/kremenevskiy/Desktop/cSharp/Lab4/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.csprojAssemblyReference.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab4/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.csproj.CoreCompileInputs.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab4/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.AssemblyInfoInputs.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab4/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.AssemblyInfo.cs
+/Users/kremenevskiy/Desktop/cSharp/Lab4/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.dll
+/Users/kremenevskiy/Desktop/cSharp/Lab4/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.pdb
+/Users/kremenevskiy/Desktop/cSharp/Lab4/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.genruntimeconfig.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab4/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.csproj.CopyComplete

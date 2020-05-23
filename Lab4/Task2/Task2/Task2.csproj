@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="UnsafeStackAndLinkedList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>bin\Debug\netcoreapp3.1\UnsafeStackAndLinkedList.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
