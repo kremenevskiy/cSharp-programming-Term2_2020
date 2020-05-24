@@ -11,11 +11,30 @@ namespace Lab3
     class Program
     {
         static List<Human> people = new List<Human>();
+        static DateTime time = DateTime.Now;
         
         static void Main(string[] args)
         {
             DateTime timeStarted = DateTime.Now;
 
+            people.Add(new Human(new DateTime(1971, 6, 28), Gender.Male,
+                183, 84, "Elon", "Musk"));
+            
+            people.Add(new Human(new DateTime(2000, 1, 20), Gender.Female,
+                168, 62, "Kristinka", "Gromova"));
+            
+            people.Add(new Human(new DateTime(2002, 5, 1), Gender.Female,
+                170, 60, "Polinka", "Efimova"));
+            
+            people.Add(new Human(new DateTime(1984, 10, 10), Gender.Male,
+                175, 79, "Pasha", "Durov"));
+            
+            foreach (var man in people)
+            {
+                man.YearsPassed(12);
+            }
+            
+            
             while (true)
             {
                 ShowMenu();
@@ -125,7 +144,7 @@ namespace Lab3
                 Console.Read();
 
                 return new Human(dateBirth, gender, height, weight, name.Substring(0, spacePos),
-                    name.Substring(spacePos));
+                    name.Substring(++spacePos));
             }
             
             
@@ -164,9 +183,9 @@ namespace Lab3
                 return;
             }
             
-            foreach (var Man in people)
+            foreach (var man in people)
             {
-                Man.ShowInfo();
+                man.ShowInfo();
                 
             }
         }
@@ -229,21 +248,24 @@ namespace Lab3
                 return;
             }
             
-            
-            foreach (var Man in people)
+            foreach (var man in people)
             {
-                Man.YearsPassed(time);
+                man.YearsPassed(time);
             }
+
+            Program.time = Program.time.AddYears(time);
             
             Console.WriteLine("\n{0} years have been passed!\n" +
                               "View everyone now!\n" +
-                              "Look how Earth has been changed!", time.ToString());
+                              "Date now: {1}\n" +
+                              "Look how Earth has been changed!\n", time.ToString(),
+                                Program.time.ToString("yyyy MMMM dd"));
             
         }
 
         static void ShowMenu()
         {
-            Console.WriteLine("\n\nDate now: {0}", DateTime.Now.ToString("yyyy MMMM dd"));
+            Console.WriteLine("\n\nDate now: {0}", time.ToString("yyyy MMMM dd"));
             Console.WriteLine("1. Create human\n" +
                               "2. Kill human\n" +
                               "3. __View people__\n" +

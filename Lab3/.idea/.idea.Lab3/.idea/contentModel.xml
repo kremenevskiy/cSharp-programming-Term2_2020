@@ -5,6 +5,7 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Human.cs" t="Include" />
       <e p="Lab3.csproj" t="IncludeRecursive" />
+      <e p="Lab3.exe" t="Include" />
       <e p="Lab3.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">

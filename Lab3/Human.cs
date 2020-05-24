@@ -118,22 +118,23 @@ namespace Lab3
                 
             }
         }
-
-
+        
+        
         public void ShowInfo()
-        {
-            Console.WriteLine("INFO");
-            Console.WriteLine($"Passport ID -- {PassportID}\n" +
-                              $"Name -- {Name}\n" +
-                              $"Surname -- {Surname}\n" +
-                              $"Gender -- {gender}\n" +
-                              $"DateBirth -- {date_of_birth.ToString("yyyy MMMM dd")}\n" +
-                              $"Age -- {Age.ToString()} y.o\n" +
-                              $"Weight -- {Weight.ToString()} kg\n" +
-                              $"Height -- {Height.ToString()} cm\n\n" +
-                              $"Experience -- {Expeience.ToString()} \n" +
-                              $"Luck -- {Luck.ToString()}%\n" +
-                              $"Money -- {Money.ToString()}$\n");
+        { 
+            Console.WriteLine("\n\tINFO");
+            
+            Console.WriteLine("{0, -12}: {1, -15}", "Name", Name);
+            Console.WriteLine("{0, -12}: {1, -15}", "Surname", Surname);
+            Console.WriteLine("{0, -12}: {1, -15}", "Passport ID", PassportID);
+            Console.WriteLine("{0, -12}: {1, -15}", "Gender", gender.ToString());
+            Console.WriteLine("{0, -12}: {1, -15}", "DateBirth", date_of_birth.ToString("yyyy MMMM dd"));
+            Console.WriteLine("{0, -12}: {1, -15}", "Age", Age.ToString() + " y.o");
+            Console.WriteLine("{0, -12}: {1, -15}", "Weight", Weight.ToString() + " kg");
+            Console.WriteLine("{0, -12}: {1, -15}", "Height", Height.ToString() + " cm\n");
+            Console.WriteLine("{0, -12}: {1, -15}", "Experience", Expeience.ToString());
+            Console.WriteLine("{0, -12}: {1, -15}", "Luck", Luck.ToString() + " %");
+            Console.WriteLine("{0, -12}: {1, -15}", "Money", Money.ToString() + " $");
         }
     }
     
