@@ -38,49 +38,52 @@ namespace Lab3
             while (true)
             {
                 ShowMenu();
-                int i = Console.Read() - 48;
-                Console.Read();
-                
-                switch (i)
-                {
-                    case 1:
-                        Human man = CreateHuman();
-                        if (man == null)
-                        {
-                            Console.WriteLine("Man isn't created. Something go wrong (");
-                            continue;
-                        }
-                        people.Add(man);
-                        break;
-                    case 2:
-                        KillMan();
-                        break;
-                    case 3:
-                        ViewFull();
-                        break;
-                    case 4:
-                        SortByMoney();
-                        break;
-                    case 5:
-                        SortByAge();
-                        break;
-                    case 6:
-                        KillEveryone();
-                        break;
-                    case 7:
-                        BoostTheTime();
-                        break;
-                    case 8:
-                        return;
-                    default:
-                        Console.Write("Wrong input, try again!\n\n");
-                        
-                        break;
-                }
+                int i = 0;
 
+                if (int.TryParse(Console.ReadLine(), out i) && (i > 0 && i < 9))
+                {
+
+                    switch (i)
+                    {
+                        case 1:
+                            Human man = CreateHuman();
+                            if (man == null)
+                            {
+                                Console.WriteLine("Man isn't created. Something go wrong (");
+                                continue;
+                            }
+
+                            people.Add(man);
+                            break;
+                        case 2:
+                            KillMan();
+                            break;
+                        case 3:
+                            ViewFull();
+                            break;
+                        case 4:
+                            SortByMoney();
+                            break;
+                        case 5:
+                            SortByAge();
+                            break;
+                        case 6:
+                            KillEveryone();
+                            break;
+                        case 7:
+                            BoostTheTime();
+                            break;
+                        case 8:
+                            return;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Wrong input! 0 < inputNum < 9");
+                }
+                
                 Console.Write("Press any key to continue...");
                 Console.ReadKey(true);
-
             }
         }
 
