@@ -1,10 +1,11 @@
 using System;
 
-namespace Lab5
+namespace Lab6
 {
     public abstract class Sportsman : Human
     {
         
+
         protected int _speed;
         protected int _agility;
         protected int _strength;      
@@ -26,6 +27,12 @@ namespace Lab5
             int weight, int height) : base(dateOfBirth, gender, height, weight, name, surname)
         {
             
+        }
+
+        public Sportsman(string name, string surname, IFindCountry.Country country) : base(country)
+        {
+            Name = name;
+            Surname = surname;
         }
 
 

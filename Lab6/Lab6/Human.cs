@@ -4,12 +4,21 @@ using System.Text;
 
 using System.Collections.Generic;
 
-namespace Lab5
+namespace Lab6
 {
-    public class Human
+    public class Human : IFindCountry
     {
-        public string Name { get; private set; } 
-        public string Surname { get; private set; }
+        public void SelectCountry(IFindCountry.Country country)
+        {
+            CountryFrom = country.ToString();
+        }
+
+        public IFindCountry.Country Country;
+        
+        public string CountryFrom { get; set; }
+        
+        public string Name { get; protected set; } 
+        public string Surname { get; protected set; }
         public static int NumHumans;
         public string PassportID { get; private set; }
         public int Luck { get; private set; }
@@ -28,7 +37,6 @@ namespace Lab5
             Luck = randLuck();
             Money = 1;
             Experience = 1;
-            
 
             Name = "Alien";
             Surname = "Al";
@@ -36,6 +44,14 @@ namespace Lab5
             Height = 50;
             Weight = 5;
         }
+
+        public Human(IFindCountry.Country country) : this()
+        {
+            this.Country = country;
+            SelectCountry(country);
+        }
+        
+        protected string Hello { get; }
 
         
         public Human(string Name, string Surname) : this()
