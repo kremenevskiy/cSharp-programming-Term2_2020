@@ -1,4 +1,12 @@
-$HEADER$namespace $NAMESPACE$
+namespace Lab6
 {
-  public interface $INTERFACE$ {$END$}
+    public interface IScorer
+    { 
+        bool IsScored(); 
+        int ChanceToScore();
+        
+        string Name { get; }
+        string Surname { get; }
+        string CountryFrom { get; }
+    }
 }
