@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85dd18d8-e42a-4f12-a1fa-c7eb73f50b53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Lab3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Lab3.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Lab3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Lab3.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Lab3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Lab3.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Lab3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Lab3.pdb" afterDir="false" />
-    </list>
+    <list default="true" id="85dd18d8-e42a-4f12-a1fa-c7eb73f50b53" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +68,7 @@
       <workItem from="1589886263408" duration="13067000" />
       <workItem from="1590333821796" duration="5452000" />
       <workItem from="1590339570092" duration="26000" />
-      <workItem from="1590409111233" duration="354000" />
+      <workItem from="1590409111233" duration="865000" />
     </task>
     <servers />
   </component>
@@ -83,22 +76,22 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="268" key="GridCell.Tab.0.bottom" timestamp="1590339352432">
+    <state width="1398" height="157" key="GridCell.Tab.0.bottom" timestamp="1590410664306">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1398" height="268" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1590339352432" />
-    <state width="1398" height="268" key="GridCell.Tab.0.center" timestamp="1590339352431">
+    <state width="1398" height="157" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1590410664306" />
+    <state width="1398" height="157" key="GridCell.Tab.0.center" timestamp="1590410664305">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1398" height="268" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1590339352431" />
-    <state width="1398" height="268" key="GridCell.Tab.0.left" timestamp="1590339352431">
+    <state width="1398" height="157" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1590410664305" />
+    <state width="1398" height="157" key="GridCell.Tab.0.left" timestamp="1590410664305">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1398" height="268" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1590339352431" />
-    <state width="1398" height="268" key="GridCell.Tab.0.right" timestamp="1590339352431">
+    <state width="1398" height="157" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1590410664305" />
+    <state width="1398" height="157" key="GridCell.Tab.0.right" timestamp="1590410664306">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1398" height="268" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1590339352431" />
+    <state width="1398" height="157" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1590410664306" />
     <state width="1398" height="268" key="GridCell.Tab.1.bottom" timestamp="1590339352433">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
