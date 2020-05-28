@@ -1,0 +1,12 @@
+/Users/kremenevskiy/Desktop/cSharp/Lab7/Fraction/bin/Debug/netcoreapp3.1/Fraction.deps.json
+/Users/kremenevskiy/Desktop/cSharp/Lab7/Fraction/bin/Debug/netcoreapp3.1/Fraction.runtimeconfig.json
+/Users/kremenevskiy/Desktop/cSharp/Lab7/Fraction/bin/Debug/netcoreapp3.1/Fraction.runtimeconfig.dev.json
+/Users/kremenevskiy/Desktop/cSharp/Lab7/Fraction/bin/Debug/netcoreapp3.1/Fraction.dll
+/Users/kremenevskiy/Desktop/cSharp/Lab7/Fraction/bin/Debug/netcoreapp3.1/Fraction.pdb
+/Users/kremenevskiy/Desktop/cSharp/Lab7/Fraction/obj/Debug/netcoreapp3.1/Fraction.csprojAssemblyReference.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab7/Fraction/obj/Debug/netcoreapp3.1/Fraction.csproj.CoreCompileInputs.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab7/Fraction/obj/Debug/netcoreapp3.1/Fraction.AssemblyInfoInputs.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab7/Fraction/obj/Debug/netcoreapp3.1/Fraction.AssemblyInfo.cs
+/Users/kremenevskiy/Desktop/cSharp/Lab7/Fraction/obj/Debug/netcoreapp3.1/Fraction.dll
+/Users/kremenevskiy/Desktop/cSharp/Lab7/Fraction/obj/Debug/netcoreapp3.1/Fraction.pdb
+/Users/kremenevskiy/Desktop/cSharp/Lab7/Fraction/obj/Debug/netcoreapp3.1/Fraction.genruntimeconfig.cache
