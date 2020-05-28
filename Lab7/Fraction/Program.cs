@@ -153,10 +153,9 @@ namespace Fraction
             Console.WriteLine($"{fractTest1} >= {fractTest2} = {(fractTest1>=fractTest2).ToString()}");
             Console.WriteLine($"{fractTest1} <= {fractTest2} = {(fractTest1<=fractTest2).ToString()}");
             Console.WriteLine($"{fractTest1} == {fractTest2} = {(fractTest1==fractTest2).ToString()}");
-            Console.WriteLine($"{fractTest1} != {fractTest2} = {(fractTest1!=fractTest2).ToString()}");
+            Console.WriteLine($"++ {fractTest1} ==> {(++fractTest1).ToString()}");
+            Console.WriteLine($"-- {fractTest1} ==> {(--fractTest1).ToString()}");
 
-            
-            
             
             // Testing Converting types from Fraction to simple C# types
             Console.ForegroundColor = ConsoleColor.Blue;
@@ -257,22 +256,6 @@ namespace Fraction
                 else
                     Console.WriteLine("Can't Parse from -- {0}\n", parsingStr);
             }
-
-
-
-
-
-
-            
-            // Console.WriteLine("String1: {0}", testString);
-            // if (Fraction.TryParse(tryString1, out Fraction fraction1))
-            //     Console.WriteLine("Result Parse: {0}", fraction1);
-            // else
-            //     Console.WriteLine("Can't Parse from {0}", tryString1);
-
-
-
-
-            }
+        }
     }
 }
