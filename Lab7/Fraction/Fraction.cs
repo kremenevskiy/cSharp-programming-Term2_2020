@@ -20,7 +20,7 @@ namespace Fraction
         {
             get => numerator;
             private set => numerator = value;
-        }
+        }        
 
         public long Denominator
         {
