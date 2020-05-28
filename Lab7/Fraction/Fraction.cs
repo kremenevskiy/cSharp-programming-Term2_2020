@@ -19,13 +19,13 @@ namespace Fraction
         public long Numerator
         {
             get => numerator;
-            set => numerator = value;
+            private set => numerator = value;
         }
 
-        private long Denominator
+        public long Denominator
         {
             get => denominator;
-            set
+            private set
             {
                 if (value == 0)
                     throw new ArgumentException("Argument couldn't be equal to zero !");
@@ -294,9 +294,12 @@ namespace Fraction
         }
 
 
-        public static bool operator >(Fraction a, Fraction b) => a.CompareTo(b) == 1;
+        public static bool operator >(Fraction a, Fraction b) => a.CompareTo(b) == 1; 
+        public static bool operator >=(Fraction a, Fraction b) => a.CompareTo(b) != -1;
 
         public static bool operator <(Fraction a, Fraction b) => a.CompareTo(b) == -1;
+        public static bool operator <=(Fraction a, Fraction b) => a.CompareTo(b) != 1;
+
 
         public static bool operator ==(Fraction a, Fraction b) => a.CompareTo(b) == 0;
 
@@ -351,14 +354,14 @@ namespace Fraction
             fraction = null;
             // From long
             Regex pattern1 = new Regex(@"^\s*?([+-]?\d{1,15}\s*?$)");
-            // From Fraction like: 23 / 12
+            // From Fraction like: 23 / 1222
             Regex pattern2 = new Regex(@"^\s*?([+-]?\d{1,15})\s*?/\s*?([+-]?\d{1,15})\s*?$");
             // From double
-            Regex pattern3 = new Regex(@"^\s*?([+-]\d{1,7})[,.](\d{1,7})\s*?$");
+            Regex pattern3 = new Regex(@"^\s*?([+-]?\d{1,20})[,.](\d{1,20})\s*?$");
             
             Regex badPattern1 = new Regex(@"^\s*?([+-]?\d{16,}\s*?$)");
             Regex badPattern2 = new Regex(@"^\s*?([+-]?\d{16,})\s*?/\s*?([+-]?\d{16,})\s*?$");
-            Regex badPattern3 = new Regex(@"^\s*?([+-]\d{8,})[,.](\d{8,})\s*?$");
+            Regex badPattern3 = new Regex(@"^\s*?([+-]\d{21,})[,.](\d{21,})\s*?$");
 
 
             if (pattern1.IsMatch(str))
@@ -381,26 +384,31 @@ namespace Fraction
                 Match match = pattern3.Match(str);
 
                 string doubleInput = match.Value;
+                int indComma = str.IndexOf(',');
+                if (indComma > 0)
+                    doubleInput = doubleInput.Replace(',', '.');
+                
                 string fractionalPart = double.Parse(match.Groups[2].Value).ToString();
-                double fractinalPartValue = double.Parse(doubleInput);
+                double doubleNum = double.Parse(doubleInput); 
 
                 long tensDegree = (long) Math.Pow(10, fractionalPart.Length);
-                fractinalPartValue *= tensDegree;
-                long newNum = (long) fractinalPartValue;
+                doubleNum *= tensDegree;
+                long newNum = (long) doubleNum;
 
                 fraction = new Fraction(newNum, tensDegree);
                 return true;
             }
             else if(badPattern3.IsMatch(str))
-                throw new ArithmeticException("Can't convert from number with more than 8 digits");
+                throw new ArithmeticException("Can't convert from number with more than 20 digits");
             else if(badPattern2.IsMatch(str) || badPattern1.IsMatch(str))
                 throw new ArithmeticException("Can't convert from number more then long type");
             else
             {
-                throw new ArithmeticException($"Can't parse ");
+                return false;
             }
         }
 
+        
         public bool ToBoolean(IFormatProvider? provider)
         {
             if (Numerator != 0 && Denominator != 0)
