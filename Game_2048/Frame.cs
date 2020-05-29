@@ -9,7 +9,7 @@ namespace Game_2048
         private int [,] _board = new int[Size, Size];
         private int _score = 0;
         
-        
+         
         private void NewGame()
         {
             for (int i = 0; i < Size; ++i)
