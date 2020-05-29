@@ -1,40 +1,49 @@
 using System;
+using System.Net.Http.Headers;
+using System.Threading;
 
-namespace Lab6
+namespace Lab8
 {
-    public sealed class Footballer : Sportsman, IScorer
+    public class Footballer : Sportsman, IScorer
     {
-
+        // event for broadcasting all interesting moments online when game is playing
+        public static event BroadcastHandler BroadcastingFootballCloseMoments;
+        
         public bool IsScored()
         {
             Random scoreChance = new Random();
             int scoreCh = scoreChance.Next(0, 2500);
             if (ChanceToScore() >= scoreCh)
             {
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.WriteLine("Hooray! Goooooooal!! Goooooal!!");
-                Console.WriteLine($"{Name} {Surname} SCORED !!");
-                Console.ResetColor();
+                BroadcastingFootballCloseMoments?.Invoke("Hooray! Goooooooal!! Goooooal!!");
+                BroadcastingFootballCloseMoments?.Invoke($"{Name} {Surname} SCORED !!\n");
+                Thread.Sleep(1700);
                 
                 return true;
             }
             else if (ChanceToScore() + 100 >= scoreCh)
             {
-                Console.WriteLine($"OMG!! It was so close!!\n" +
-                                  $"{Name} {Surname} showing nice game\n" +
-                                  $"but ball heated to the crossbar\n");
+                BroadcastingFootballCloseMoments?.Invoke($"OMG!! It was so close!!\n" +
+                                                         $"Ball heated to the crossbar!!\n" +
+                                                         $"{Name} {Surname} showing nice game\n");
+                Thread.Sleep(1700);
+
                 return false;
             }
             else if (ChanceToScore() + 200 >= scoreCh)
             {
-                Console.WriteLine($"Oooofff!! The ball hit the post!!\n" +
+                BroadcastingFootballCloseMoments?.Invoke($"Oooofff!! The ball hit the post!!\n" +
                                   $"{Name} {Surname} Good Try\n");
+                Thread.Sleep(1700);
+
                 return false;
             }
             else if (ChanceToScore() + 400 >= scoreCh)
             {
-                Console.WriteLine($"Nice try! Accurate shot by {Name} {Surname} to the targer\n" +
+                BroadcastingFootballCloseMoments?.Invoke($"Nice try! Accurate shot by {Name} {Surname} to the targer\n" +
                                   $"But goalkeeper caught the ball\n");
+                Thread.Sleep(1700);
+
                 return false;
             }
             else
