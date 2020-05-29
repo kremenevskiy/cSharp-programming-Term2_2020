@@ -240,7 +240,7 @@ namespace Lab3
             Console.WriteLine("\nSuccessful ! Earth is Clear ! ");
         }
 
-
+ 
         static void BoostTheTime()
         {
             
