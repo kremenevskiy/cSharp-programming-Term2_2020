@@ -1,6 +1,6 @@
 using System;
 
-namespace Lab6
+namespace Lab8
 {
     public abstract class Sportsman : Human
     {

@@ -1,7 +1,6 @@
 using System;
-using Lab6;
 
-namespace Lab6
+namespace Lab8
 {
     public class Runner : Sportsman, IRunner
     {

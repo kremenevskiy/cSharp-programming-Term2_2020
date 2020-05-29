@@ -1,4 +1,4 @@
-namespace Lab6
+namespace Lab8
 {
     public interface IFighter<T>
     {

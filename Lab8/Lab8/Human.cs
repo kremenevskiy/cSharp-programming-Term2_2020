@@ -4,7 +4,7 @@ using System.Text;
 
 using System.Collections.Generic;
 
-namespace Lab6
+namespace Lab8
 {
     public class Human : IFindCountry
     {

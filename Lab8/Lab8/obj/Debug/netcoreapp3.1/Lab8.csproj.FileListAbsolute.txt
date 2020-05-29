@@ -1,0 +1,12 @@
+/Users/kremenevskiy/Desktop/cSharp/Lab8/Lab8/bin/Debug/netcoreapp3.1/Lab8.deps.json
+/Users/kremenevskiy/Desktop/cSharp/Lab8/Lab8/bin/Debug/netcoreapp3.1/Lab8.runtimeconfig.json
+/Users/kremenevskiy/Desktop/cSharp/Lab8/Lab8/bin/Debug/netcoreapp3.1/Lab8.runtimeconfig.dev.json
+/Users/kremenevskiy/Desktop/cSharp/Lab8/Lab8/bin/Debug/netcoreapp3.1/Lab8.dll
+/Users/kremenevskiy/Desktop/cSharp/Lab8/Lab8/bin/Debug/netcoreapp3.1/Lab8.pdb
+/Users/kremenevskiy/Desktop/cSharp/Lab8/Lab8/obj/Debug/netcoreapp3.1/Lab8.csprojAssemblyReference.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab8/Lab8/obj/Debug/netcoreapp3.1/Lab8.csproj.CoreCompileInputs.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab8/Lab8/obj/Debug/netcoreapp3.1/Lab8.AssemblyInfoInputs.cache
+/Users/kremenevskiy/Desktop/cSharp/Lab8/Lab8/obj/Debug/netcoreapp3.1/Lab8.AssemblyInfo.cs
+/Users/kremenevskiy/Desktop/cSharp/Lab8/Lab8/obj/Debug/netcoreapp3.1/Lab8.dll
+/Users/kremenevskiy/Desktop/cSharp/Lab8/Lab8/obj/Debug/netcoreapp3.1/Lab8.pdb
+/Users/kremenevskiy/Desktop/cSharp/Lab8/Lab8/obj/Debug/netcoreapp3.1/Lab8.genruntimeconfig.cache
