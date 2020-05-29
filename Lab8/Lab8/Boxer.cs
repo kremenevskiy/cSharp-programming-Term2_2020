@@ -1,10 +1,12 @@
 using System;
-using Lab6;
+using System.Threading;
 
-namespace Lab6
+namespace Lab8
 {
     public class Boxer : Sportsman, IFighter<Boxer>
     {
+        // for broadcasting online battle moments
+        public static event BroadcastHandler BroadcastingMomentsBoxing;
 
         public float Hit()
         {
@@ -21,23 +23,29 @@ namespace Lab6
             int luck1 = randLuck();
             int luck2 = randLuck();
             
-            Console.WriteLine("\n____Battle started!____");
-            Console.WriteLine("Boxer vs Boxer\n");
-            Console.WriteLine($"{this.Name} {this.Surname} vs {opponent.Name} {opponent.Surname}");
-            Console.WriteLine("Calculating chances...");
-            Console.WriteLine("{0, -16}| {1, -13} % {2, -10}",
-                $"Boxer: {this.Name}", $"Round Luck: {luck1.ToString()}", $"| Damage: {this.Hit().ToString()}");
-            Console.WriteLine("{0, -16}| {1, -13} % {2, -10}",
-                $"Boxer: {opponent.Name}", $"Round Luck: {luck2.ToString()}", $"| Damage: {opponent.Hit().ToString()}");
+            BroadcastingMomentsBoxing?.Invoke("\n____Battle started!____");
+            BroadcastingMomentsBoxing?.Invoke("Boxer vs Boxer\n");
+            BroadcastingMomentsBoxing?.Invoke($"{this.Name} {this.Surname} vs {opponent.Name} {opponent.Surname}");
+            BroadcastingMomentsBoxing?.Invoke("Calculating chances...");
+            BroadcastingMomentsBoxing?.Invoke(string.Format("{0, -16}| {1, -13} % {2, -10}",
+                $"Boxer: {this.Name}", $"Round Luck: {luck1.ToString()}", $"| Damage: {this.Hit().ToString()}"));
+            BroadcastingMomentsBoxing?.Invoke(string.Format("{0, -16}| {1, -13} % {2, -10}",
+                $"Boxer: {opponent.Name}", $"Round Luck: {luck2.ToString()}", $"| Damage: {opponent.Hit().ToString()}"));
 
             float winChance1 = this.Hit() + ( luck1 * 0.05f );
             float winChance2 = opponent.Hit() + ( luck2 * 0.05f );
             
-            if (winChance1 > winChance2) 
-                Console.WriteLine("\nWinner : {0}", $"{this.Name} {this.Surname} | Country: {this.CountryFrom}\n");
+            BroadcastingMomentsBoxing?.Invoke("Battling...");
+            Thread.Sleep(2000);
+            
+            if (winChance1 > winChance2)
+                BroadcastingMomentsBoxing?.Invoke(
+                    string.Format("\nWinner : {0}", $"{this.Name} {this.Surname}  " +
+                                                    $"| Country: {this.CountryFrom}\n"));
             else
-                Console.WriteLine("\nWinner : {0}", $"{opponent.Name} {opponent.Surname} | Country:" +
-                                                    $" {opponent.CountryFrom}\n\n");
+                BroadcastingMomentsBoxing?.Invoke(
+                    string.Format("\nWinner : {0}", $"{opponent.Name} {opponent.Surname} |" +
+                                                    $" Country:" + $" {opponent.CountryFrom}\n\n"));
             
             
             return winChance1 > winChance2;
